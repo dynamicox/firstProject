@@ -97,6 +97,14 @@ padding: 20px;
     background-color: #F3F3F3;
     min-height: 100vh;
 }
+.errorLogo{
+    background-color: rgb(11, 11, 207);
+    font-size: 150px;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 20px;
+    margin-left: 50px;
+    max-width: 300px;
+}
 
 .homeShowImg{
     background-image: url('https://images.pexels.com/photos/4577740/pexels-photo-4577740.jpeg?cs=srgb&dl=pexels-rachel-claire-4577740.jpg&fm=jpg');

@@ -12,28 +12,30 @@ import {StorageProvider} from './contexts/StorageContext'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { PrivateRoute } from "./components/PrivateRoute";
 import { ForgotPass } from "./views/ForgotPass";
+import { NotFound } from './views/NotFound';
 
 function App() {
   return (
     <>
     <AuthProvider>
+    <StorageProvider>
       <Router>
         <Switch>
-          <>
-            <StorageProvider>
-              <PrivateRoute path="/" exact component={HomePage} />
-              <PrivateRoute path="/my-recipes" exact component={ViewUserProducts} />
-              <PrivateRoute path="/my-recipes/update/:id"  component={UserProducts} />
-              <PrivateRoute path='/my-recipes/add'  component={UserProducts} />
-              <PrivateRoute path="/profile" component={UserProfile} />
-              <PrivateRoute path="/recipe/:id" component={ViewItem} />
-            </StorageProvider>
+
+          <PrivateRoute path="/" exact component={HomePage} />
+          <PrivateRoute path="/my-recipes" exact component={ViewUserProducts} />
+          <PrivateRoute path="/my-recipes/update/:id"  component={UserProducts} />
+          <PrivateRoute path='/my-recipes/add'   component={UserProducts} />
+          <PrivateRoute path="/profile"  component={UserProfile} />
+          <PrivateRoute path="/recipe/:id"  component={ViewItem} />
           <Route path="/login"  component={LoginPage} />
-          <Route path="/create-user" component={RegisterPage} />
-          <Route path="/reset-password" component={ForgotPass} />
-          </>
+          <Route path="/create-user"  component={RegisterPage} />
+          <Route path="/reset-password"  component={ForgotPass} />
+          <Route path="*" component={NotFound} />
+
         </Switch>
       </Router>
+    </StorageProvider>
     </AuthProvider>
     
     </>

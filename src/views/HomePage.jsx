@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { PageNavbar } from "../components/Navbar";
 import { ItemCard } from "../components/ItemCard";
@@ -9,6 +9,7 @@ import { useStorage } from "../contexts/StorageContext";
 export const HomePage = () => {
     const { getAllRecipes } = useStorage();
     const [recipes,  setRecipes] = useState([])
+    const userWarning = useRef()
  
     useEffect(() => {
        getAllRecipes().then((query)=>{
@@ -28,7 +29,7 @@ export const HomePage = () => {
         <>
         <div style={{backgroundColor: "#F3F3F3", minHeight: '100vh'}}>
             <PageNavbar  />
-                <Container fluid className="d-flex homeShowImg  text-light align-items-center justify-content-center">
+                <Container ref={userWarning} fluid className="d-flex homeShowImg  text-light align-items-center justify-content-center">
                     <div>
                         <div className="text-light h1 welcomeText welcomeGradient">
                                 Welcome

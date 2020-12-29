@@ -49,10 +49,6 @@ export const LoginPage = () => {
                                 <Link to="create-user"> Don't have an account yet?<br /> Create account.</Link>
                                 <Link to="/reset-password" > Forgot Password?</Link>
                             </div>
-                            {/* <div className="d-flex justify-content-center mt-3">
-                                <Link><i class="fab fa-facebook fa-3x text-light"></i></Link>
-                                <Link><i class="fab fa-google-plus fa-3x ml-4 text-light"></i></Link>
-                            </div> */}
                         </Form>
                         </div>
                     </Col>
