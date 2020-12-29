@@ -1,0 +1,125 @@
+
+/*  @media (max-width: 992px) { 
+     body{
+         background: blue;
+        } 
+    }
+    @media (max-width: 768px) { 
+        body{
+            background: red;
+        } 
+    }
+    @media (max-width: 576px) { 
+        body{
+            background: purple;
+        }
+     }
+ */
+
+ .loginImgBg{
+     background-image: url("./static/amin-rk-Ph5fj2eVv0g-unsplash.jpg" );
+    width: 100%;
+     height: 100vh;
+     background-repeat: no-repeat;
+ }
+
+ .formShadowBox{
+border: 0px ;
+padding: 40px 55px;
+-webkit-box-shadow: 0px 0px 32px 9px rgba(0, 0, 0, 0.493);
+-moz-box-shadow: 0px 0px 32px 9px rgba(0, 0, 0, 0.479);
+box-shadow: 0px 0px 32px 9px rgba(0, 0, 0, 0.479);
+min-width: 450px;
+max-width: 450px;
+ }
+
+ .navbarPageBg{
+background: rgb(69,223,81);
+background: -moz-linear-gradient(157deg, rgba(69,223,81,0.38139005602240894) 3%, rgba(148,147,154,0.38139005602240894) 19%, rgba(5,5,5,0.5046393557422969) 82%, rgba(221,114,53,0.7455357142857143) 100%);
+background: -webkit-linear-gradient(157deg, rgba(69,223,81,0.38139005602240894) 3%, rgba(148,147,154,0.38139005602240894) 19%, rgba(5,5,5,0.5046393557422969) 82%, rgba(221,114,53,0.7455357142857143) 100%);
+background: linear-gradient(157deg, rgba(69,223,81,0.38139005602240894) 3%, rgba(148,147,154,0.38139005602240894) 19%, rgba(5,5,5,0.5046393557422969) 82%, rgba(221,114,53,0.7455357142857143) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#45df51",endColorstr="#dd7235",GradientType=1);
+}
+
+.errorBg{
+    background: rgb(255,0,0);
+background: -moz-linear-gradient(157deg, rgba(255,0,0,0.15730042016806722) 3%, rgba(255,0,0,0.1292892156862745) 100%);
+background: -webkit-linear-gradient(157deg, rgba(255,0,0,0.15730042016806722) 3%, rgba(255,0,0,0.1292892156862745) 100%);
+background: linear-gradient(157deg, rgba(255,0,0,0.15730042016806722) 3%, rgba(255,0,0,0.1292892156862745) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#ff0000",GradientType=1);
+}
+
+.successBg{
+background: rgb(0,255,8);
+background: -moz-linear-gradient(157deg, rgba(0,255,8,0.13) 3%, rgba(0,255,8,0.1292892156862745) 100%);
+background: -webkit-linear-gradient(157deg, rgba(0,255,8,0.13) 3%, rgba(0,255,8,0.1292892156862745) 100%);
+background: linear-gradient(157deg, rgba(0,255,8,0.13) 3%, rgba(0,255,8,0.1292892156862745) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff08",endColorstr="#00ff08",GradientType=1);}
+
+.userProfilePhoto{
+    height: 200px;
+     width: 200px;
+     border-radius: 100px;
+}
+
+.verticalLine{
+    width:1px;
+       background-color:rgba(87, 84, 84, 0.534);
+       position:absolute;
+       margin: 10px 0px;
+       top:0;
+       bottom:0;
+       left:250px;
+}
+
+.profileCard{
+    -webkit-box-shadow: 0px 0px 32px 9px rgba(0, 0, 0, 0.144);
+-moz-box-shadow: 0px 0px 32px 9px rgba(0, 0, 0, 0.144);
+box-shadow: 0px 0px 32px 9px rgba(0, 0, 0, 0.13);
+min-width: 400px;
+padding: 20px;
+}
+
+.showProductImg{
+    min-height: fit-content;
+    max-height: 300px;
+    min-width: 350px;
+   max-width: 350px;
+   border-radius: 11px;
+}
+.scaleImg{
+    max-height: 400px;
+    max-width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.basicBg{
+    background-color: #F3F3F3;
+    min-height: 100vh;
+}
+
+.homeShowImg{
+    background-image: url('https://images.pexels.com/photos/4577740/pexels-photo-4577740.jpeg?cs=srgb&dl=pexels-rachel-claire-4577740.jpg&fm=jpg');
+    min-height: 350px;
+    viewport-fit: cover;
+}
+
+
+.welcomeText{
+    border: white solid 5px;
+    font-size: 72px;
+    padding: 10px 15px;
+}
+
+@media (max-width: 576px) { 
+    .scaleImg{
+        max-width: 100%;
+        max-height: 300px;
+        object-position: center;
+        object-fit: cover;
+    }
+    .homeShowImg{
+    background-image: url('https://images.pexels.com/photos/4577740/pexels-photo-4577740.jpeg?cs=srgb&dl=pexels-rachel-claire-4577740.jpg&fm=jpg');
+    min-height: 200px;
+}
+}
