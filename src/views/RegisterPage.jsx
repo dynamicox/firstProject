@@ -24,10 +24,7 @@ export const RegisterPage = () => {
         return  setErrMsg('Passwords do not match')
       }else if(!passRegEx.test(passwordRef.current.value)){
         return setErrMsg('Password must have 8 characters an uppercase letter and a number')
-      }
-      console.log('Signing up')
-      
-
+      }else{
         try {
             setLoading(true);
             setErrMsg();
@@ -36,6 +33,10 @@ export const RegisterPage = () => {
         } catch (err) {
           setErrMsg(err.message);
         }
+      }
+      
+
+
         
         setLoading(false)
   }
@@ -70,7 +71,7 @@ export const RegisterPage = () => {
                         <Form.Group className="mb-3">
                             <Form.Label>Password:</Form.Label>
                             <Form.Control type="password" size="sm" ref={passwordRef} onChange={ (event) =>{
-                              emailAndPassValidator(event.target.value,passRegEx,'Password must have 8 characters an uppercase letter and a number')
+                              emailAndPassValidator(event.target.value,passRegEx,'Password must have 8-16 characters an uppercase letter and a number')
                             }} />
                         </Form.Group>
                         <Form.Group className="mb-3">
